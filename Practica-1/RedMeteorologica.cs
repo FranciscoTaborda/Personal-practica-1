@@ -15,12 +15,16 @@
         /// <summary>
         /// Agrega una estación a la red si no es nula ni duplicada.
         /// </summary>
-        /// <param name="e">La estación a agregar.</param>
         public void AgregarEstacion(Estacion e)
         {
+            
+
+
             if (e == null) return;
-            if (!estaciones.Contains(e))
+            if (!estaciones.Any(e => e.Codigo == e.Codigo))
+            {
                 estaciones.Add(e);
+            }
         }
 
         /// <summary>

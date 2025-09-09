@@ -35,7 +35,7 @@
                 }
 
                 UltimaLectura = nuevaLectura;
-                Auditar("lectura registrada", "Temp: " + nuevaLectura.Temperatura + "°C, Hum: " +   nuevaLectura.Humedad + "%, VelVien: " +   nuevaLectura.VelViento + " km/h, Lluv: " +   nuevaLectura.Lluvia + " mm/h, Pres: " +   nuevaLectura.Presion + "hPa");
+                Auditar("lectura registrada", "Temp: " + nuevaLectura.Temperatura + "°C, Hum: " + nuevaLectura.Humedad + "%, VelVien: " + nuevaLectura.VelViento + " km/h, Lluv: " + nuevaLectura.Lluvia + " mm/h, Pres: " + nuevaLectura.Presion + "hPa");
             }
             catch (Exception ex)
             {

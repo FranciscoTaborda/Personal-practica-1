@@ -1,12 +1,9 @@
 ﻿using System;
-using SistemaParqueadero;
 using RedMeteorologica;
 
 class Program
-
 {
-
-    private static RedMeteorologica redMeteorologica = new RedMeteorologica();
+    private static RedMeteorologica.RedMeteorologica redMeteorologica = new RedMeteorologica.RedMeteorologica();
     static void Main(string[] args)
     {
         MostrarMenuPrincipal();
@@ -96,7 +93,8 @@ class Program
             switch (opcion)
             {
                 case 1:
-                    RedMeteorologica.AgregarEstacion();
+                    redMeteorologica.AgregarEstacion();
+                    Pausa();
                     break;
                 case 2:
                     // TODO: Registrar lectura
